@@ -1,8 +1,13 @@
 package com.derrick.springbootrestapisactivemq.model;
 
-public class Task {
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
+@ApiModel(description = "All details about Tasks")
+public class Task {
+    @ApiModelProperty(notes = "Task id")
     private Long id;
+    @ApiModelProperty(notes = "Task name")
     private String name;
 
     public Task(){
